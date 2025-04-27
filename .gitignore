@@ -1,18 +1,34 @@
-# Ignore build files
-/build/
-
-# Ignore output images
-/output/
-
-# Ignore CMake cache and temporary files
-CMakeFiles/
+# CMake generated files
 CMakeCache.txt
-Makefile
+CMakeFiles/
 cmake_install.cmake
+compile_commands.json
+Makefile
+*.cbp
 
-# Ignore OS-generated files
+# Build directory (often created by CMake/CLion)
+build/
+cmake-build-*/
+out/
+
+# CLion specific files
+.idea/
+
+# Output directory (as per your project structure)
+output/
+
+# Executables (adjust if names differ)
+runscrim
+tester
+
+# Zip file created by your CMakeLists.txt
+delivery.zip
+
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Ignore zip deliveries
-*.zip
+# Temporary files
+*~
+*.swp
+*.swo
