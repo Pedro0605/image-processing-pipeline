@@ -1,0 +1,18 @@
+# Ignore build files
+/build/
+
+# Ignore output images
+/output/
+
+# Ignore CMake cache and temporary files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore zip deliveries
+*.zip
