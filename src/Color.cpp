@@ -4,12 +4,14 @@
 using std::istream;
 
 namespace prog {
+    // Constructor with r, g and b = 0
     Color::Color() {
         r = 0;
         g = 0;
         b = 0;
     }
 
+    // Copy constructor
     Color::Color(const Color &other) {
         r = other.r;
         g = other.g;

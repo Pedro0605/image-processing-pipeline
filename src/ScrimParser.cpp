@@ -13,6 +13,8 @@
 #include <vector>
 #include <cstdlib>
 
+#include "Command/Invert.hpp"
+
 using std::ifstream;
 using std::istream;
 using std::string;
@@ -79,6 +81,10 @@ namespace prog {
             string filename;
             input >> filename;
             return new command::Open(filename);
+        }
+
+        if (command_name == "invert") {
+            return new command::Invert();
         }
 
         // TODO: implement cases for the new commands
