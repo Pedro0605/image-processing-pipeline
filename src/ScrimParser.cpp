@@ -6,14 +6,17 @@
 #include "Command/Blank.hpp"
 #include "Command/Save.hpp"
 #include "Command/Open.hpp"
+#include "Command/Invert.hpp"
+#include "Command/To_gray_scale.hpp"
+#include "Command/Replace.hpp"
 #include "Logger.hpp"
 
 #include <fstream>
 #include <string>
 #include <vector>
+#include <sstream>
 #include <cstdlib>
 
-#include "Command/Invert.hpp"
 
 using std::ifstream;
 using std::istream;
@@ -85,6 +88,20 @@ namespace prog {
 
         if (command_name == "invert") {
             return new command::Invert();
+        }
+
+        if (command_name == "to_gray_scale")
+        {
+            return new command::to_gray_scale();
+        }
+
+        if (command_name == "replace")
+        {
+            unsigned int r1, g1, b1, r2, g2, b2;
+            input >> r1 >> g1 >> b1 >> r2 >> g2 >> b2;
+            Color target = Color(static_cast<unsigned char>(r1), static_cast<unsigned char>(g1), static_cast<unsigned char>(b1));
+            Color replacer = Color(static_cast<unsigned char>(r2), static_cast<unsigned char>(g2), static_cast<unsigned char>(b2));
+            return new command::Replace(target, replacer);
         }
 
         // TODO: implement cases for the new commands
