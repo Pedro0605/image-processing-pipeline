@@ -9,6 +9,8 @@
 #include "Command/Invert.hpp"
 #include "Command/To_gray_scale.hpp"
 #include "Command/Replace.hpp"
+#include "Command/H_mirror.hpp"
+#include "Command/V_mirror.hpp"
 #include "Logger.hpp"
 
 #include <fstream>
@@ -16,6 +18,8 @@
 #include <vector>
 #include <sstream>
 #include <cstdlib>
+
+#include "Command/Add.hpp"
 
 
 using std::ifstream;
@@ -90,13 +94,11 @@ namespace prog {
             return new command::Invert();
         }
 
-        if (command_name == "to_gray_scale")
-        {
+        if (command_name == "to_gray_scale") {
             return new command::to_gray_scale();
         }
 
-        if (command_name == "replace")
-        {
+        if (command_name == "replace") {
             unsigned int r1, g1, b1, r2, g2, b2;
             input >> r1 >> g1 >> b1 >> r2 >> g2 >> b2;
             Color target = Color(static_cast<unsigned char>(r1), static_cast<unsigned char>(g1), static_cast<unsigned char>(b1));
@@ -104,7 +106,24 @@ namespace prog {
             return new command::Replace(target, replacer);
         }
 
-        // TODO: implement cases for the new commands
+        if (command_name == "h_mirror") {
+            return new command::h_mirror();
+        }
+
+        if (command_name == "v_mirror")
+        {
+            return new command::v_mirror();
+        }
+
+        if (command_name == "add") {
+            string filename;
+            unsigned int r, g, b;
+            int x, y;
+            input >> filename >> r >> g >> b >> x >> y;
+            Color neutral = Color(static_cast<unsigned char>(r), static_cast<unsigned char>(g), static_cast<unsigned char>(b));
+            return new command::Add(filename, neutral, x, y);
+        }
+
 
         *Logger::err() << "Command not recognized: '" + command_name + "'\n";
         return nullptr;
