@@ -6,6 +6,7 @@
 #include "PNG.hpp"
 #include "Image.hpp"
 #include "Color.hpp"
+#include "Logger.hpp"
 #include <sstream>
 
 namespace prog {
@@ -19,6 +20,11 @@ namespace prog {
         // Copies non-neutral pixels from the given image into the current image at (x, y)
         Image *Add::apply(Image *img)
         {
+            if (img == nullptr) {
+                *Logger::err() << "Error: 'add' command requires an existing image, but received a null image.\n";
+                return nullptr;
+            }
+
             Image *source = loadFromPNG(filename);
             int src_width = source->width();
             int src_height = source->height();
