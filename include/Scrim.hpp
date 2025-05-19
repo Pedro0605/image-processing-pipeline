@@ -1,42 +1,27 @@
-#ifndef __prog_Script_hpp__
-#define __prog_Script_hpp__
+//
+// Created by JBispo on 05/04/2025.
+//
+#ifndef SCRIM_HPP
+#define SCRIM_HPP
 
 #include "Command.hpp"
 #include "Image.hpp"
-#include <string>
-#include <fstream>
+#include <vector>
 
 namespace prog {
     class Scrim {
+    private:
+        std::vector<Command *> commands;
+
     public:
         Scrim(std::vector<Command *> &commands);
 
         ~Scrim();
 
+        Image *run(Image *img, bool is_chained = false);
 
-        /**
-         * Runs this pipeline starting with the given image.
-         *
-         * @param img
-         * @return the image created/transformed by this pipeline
-         */
-        Image *run(Image *img);
-
-        /**
-         * Runs this pipeline without a starting image.
-         *
-         * @return the image created by this pipeline
-         */
         Image *run();
-
-    private:
-        // Commands
-        std::vector<Command *> commands;
-
-    private:
-        // Private functions
-        // implement just 3 commands: blank, open, save.
     };
 }
-#endif
 
+#endif // SCRIM_HPP

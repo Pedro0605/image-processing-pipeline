@@ -1,8 +1,16 @@
-#ifndef PROJECT_SCRIPTPARSER_H
-#define PROJECT_SCRIPTPARSER_H
+//
+// Created by JBispo on 05/04/2025.
+//
+#ifndef PROJECT_SCRIMPARSER_H
+#define PROJECT_SCRIMPARSER_H
 
 #include "Scrim.hpp"
+#include "Command.hpp" // Required for parse_command return type
+#include "Image.hpp" // Required by some commands
+#include "Color.hpp" // Required by some commands
 #include <iostream>
+#include <string>
+#include <vector> // Required for call_stack
 
 namespace prog {
     class ScrimParser {
@@ -11,25 +19,14 @@ namespace prog {
 
         ~ScrimParser();
 
+        static std::vector<std::string> call_stack;
 
-        /**
-         * Base method that parses an input script, from a generic input stream.
-         *
-         * @param input
-         * @return a **new** ImagePipeline built from the script defined in the input stream
-         */
-        Scrim *parseScrim(std::istream &input);
+        static Scrim *parseScrim(std::istream &input);
 
-        /**
-         * Helper method that accepts a file.
-         *
-         * @param filename
-         * @return a **new** ImagePipeline built from the script defined in the given file
-         */
-        Scrim *parseScrim(const std::string &filename);
+        static Scrim *parseScrim(const std::string &filename);
 
-        Command *parse_command(std::string command_name, std::istream &istream);
+        static Command *parse_command(std::string command_name, std::istream &input);
     };
 }
 
-#endif //PROJECT_SCRIPTPARSER_H
+#endif //PROJECT_SCRIMPARSER_H
