@@ -42,10 +42,10 @@ namespace prog {
 
 
     ScrimParser::ScrimParser() {
-    };
+    }
 
     ScrimParser::~ScrimParser() {
-    };
+    }
 
     // Parses a Scrim pipeline from an input stream.
     // Reads command names and parses individual commands until the stream ends.

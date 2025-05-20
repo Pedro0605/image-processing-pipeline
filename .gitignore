@@ -6,29 +6,7 @@ compile_commands.json
 Makefile
 *.cbp
 
-# Build directory (often created by CMake/CLion)
+# Build directory
 build/
 cmake-build-*/
 out/
-
-# CLion specific files
-.idea/
-
-# Output directory (as per your project structure)
-output/
-
-# Executables (adjust if names differ)
-runscrim
-tester
-
-# Zip file created by your CMakeLists.txt
-delivery.zip
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*~
-*.swp
-*.swo

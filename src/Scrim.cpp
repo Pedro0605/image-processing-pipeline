@@ -13,14 +13,14 @@ using prog::Command;
 
 namespace prog {
 
-    Scrim::Scrim(std::vector<Command *> &commands) : commands(commands) {};
+    Scrim::Scrim(std::vector<Command *> &commands) : commands(commands) {}
 
     Scrim::~Scrim() {
         // Deallocate each command
         for (Command *c: commands) {
             delete c;
         }
-    };
+    }
 
     Image *Scrim::run(Image *img, bool is_chained) {
         *Logger::out() << "Scrim::run started. is_chained: " << std::boolalpha << is_chained << ". Number of commands: " << commands.size() << "\n";

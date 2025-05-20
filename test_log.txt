@@ -1,0 +1,795 @@
+>>> [1] add1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:400 h:400 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/add1.png'
+Scrim::run finished. Returning image pointer.
+>>> [2] add2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 6
+Not in chained run context. Applying command.
+Applying command 'Blank w:800 h:800 fill:0:0:255'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 0 400'
+Not in chained run context. Applying command.
+Applying command 'add input/mondrian.png 255 255 255 400 0'
+Not in chained run context. Applying command.
+Applying command 'add input/mondrian.png 255 255 255 400 400'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/add2.png'
+Scrim::run finished. Returning image pointer.
+>>> [3] add3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 6
+Not in chained run context. Applying command.
+Applying command 'Blank w:800 h:800 fill:200:200:200'
+Not in chained run context. Applying command.
+Applying command 'add input/mondrian.png 0 0 0 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 0 400'
+Not in chained run context. Applying command.
+Applying command 'add input/mondrian.png 0 0 0 400 0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 400 400'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/add3.png'
+Scrim::run finished. Returning image pointer.
+>>> [4] add4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/jungle.png'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 1 50'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 301 50'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 601 100'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/add4.png'
+Scrim::run finished. Returning image pointer.
+>>> [5] add5 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Blank w:900 h:600 fill:255:255:255'
+Not in chained run context. Applying command.
+Applying command 'add input/fernando-pessoa.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/fernando-pessoa.png 255 255 255 300 125'
+Not in chained run context. Applying command.
+Applying command 'add input/fernando-pessoa.png 255 255 255 600 225'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/add5.png'
+Scrim::run finished. Returning image pointer.
+>>> [6] basic_blank1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 2
+Not in chained run context. Applying command.
+Applying command 'Blank w:200 h:100 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/basic_blank1.png'
+Scrim::run finished. Returning image pointer.
+>>> [7] basic_blank2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 2
+Not in chained run context. Applying command.
+Applying command 'Blank w:100 h:200 fill:255:255:0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/basic_blank2.png'
+Scrim::run finished. Returning image pointer.
+>>> [8] basic_blank3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:300 h:250 fill:0:255:255'
+Not in chained run context. Applying command.
+Applying command 'Blank w:200 h:100 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/basic_blank3.png'
+Scrim::run finished. Returning image pointer.
+>>> [9] basic_open1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 2
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/lion.png'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/basic_open1.png'
+Scrim::run finished. Returning image pointer.
+>>> [10] basic_open2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/squares.png'
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/unionjack.png'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/basic_open2.png'
+Scrim::run finished. Returning image pointer.
+>>> [11] chain1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:400 h:400 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'chain scrims/more-scrims/start1.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/chain1.png'
+Scrim::run finished. Returning image pointer.
+>>> [12] chain2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:800 h:800 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/end2.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Entering chained file: 'scrims/more-scrims/end2.scrim'
+Scrim::run started. is_chained: true. Number of commands: 5
+Applying command 'add input/lion.png 255 255 255 0 0'
+Applying command 'add input/lion.png 255 255 255 0 400'
+Applying command 'add input/mondrian.png 255 255 255 400 0'
+Applying command 'add input/mondrian.png 255 255 255 400 400'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end2.scrim'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/chain2.png'
+Scrim::run finished. Returning image pointer.
+>>> [13] chain3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:400 h:400 fill:0:255:0'
+Not in chained run context. Applying command.
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/end3.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Entering chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Applying command 'add input/lion.png 155 155 155 0 0'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end3.scrim'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/chain3.png'
+Scrim::run finished. Returning image pointer.
+>>> [14] chain4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Blank w:800 h:800 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/loop.scrim scrims/more-scrims/end2.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Entering chained file: 'scrims/more-scrims/loop.scrim'
+Scrim::run started. is_chained: true. Number of commands: 2
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/loop.scrim scrims/more-scrims/end3.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Recursive chain detected for 'scrims/more-scrims/loop.scrim'. Ignoring.
+Entering chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Applying command 'add input/lion.png 155 155 155 0 0'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/loop.scrim'
+Entering chained file: 'scrims/more-scrims/end2.scrim'
+Scrim::run started. is_chained: true. Number of commands: 5
+Applying command 'add input/lion.png 255 255 255 0 0'
+Applying command 'add input/lion.png 255 255 255 0 400'
+Applying command 'add input/mondrian.png 255 255 255 400 0'
+Applying command 'add input/mondrian.png 255 255 255 400 400'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end2.scrim'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/chain4.png'
+Scrim::run finished. Returning image pointer.
+>>> [15] chain5 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/jungle.png'
+Not in chained run context. Applying command.
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/loop1.scrim scrims/more-scrims/end3.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Entering chained file: 'scrims/more-scrims/loop1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 2
+Applying command 'chain scrims/more-scrims/start1.scrim scrims/more-scrims/loop2.scrim end'
+Entering chained file: 'scrims/more-scrims/start1.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/start1.scrim'
+Entering chained file: 'scrims/more-scrims/loop2.scrim'
+Scrim::run started. is_chained: true. Number of commands: 2
+Applying command 'add input/mondrian.png 255 255 255 400 50'
+Applying command 'chain scrims/more-scrims/loop1.scrim scrims/more-scrims/end3.scrim end'
+Recursive chain detected for 'scrims/more-scrims/loop1.scrim'. Ignoring.
+Entering chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Applying command 'add input/lion.png 155 155 155 0 0'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/loop2.scrim'
+Applying command 'invert'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/loop1.scrim'
+Entering chained file: 'scrims/more-scrims/end3.scrim'
+Scrim::run started. is_chained: true. Number of commands: 1
+Applying command 'add input/lion.png 155 155 155 0 0'
+Scrim::run finished. Returning image pointer.
+Exiting chained file: 'scrims/more-scrims/end3.scrim'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/chain5.png'
+Scrim::run finished. Returning image pointer.
+>>> [16] crop1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'crop 0 0 300 300'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop1.png'
+Scrim::run finished. Returning image pointer.
+>>> [17] crop2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/dead-combo.png'
+Not in chained run context. Applying command.
+Applying command 'crop 299 0 100 150'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop2.png'
+Scrim::run finished. Returning image pointer.
+>>> [18] crop3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'crop 0 0 300 300'
+Not in chained run context. Applying command.
+Applying command 'crop 50 50 100 100'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop3.png'
+Scrim::run finished. Returning image pointer.
+>>> [19] crop4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'crop 300 300 300 300'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop4.png'
+Scrim::run finished. Returning image pointer.
+>>> [20] crop5 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'crop 0 0 500 500'
+Not in chained run context. Applying command.
+Applying command 'crop 50 50 400 400'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop5.png'
+Scrim::run finished. Returning image pointer.
+>>> [21] crop6 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'crop 0 0 500 500'
+Not in chained run context. Applying command.
+Applying command 'crop 10 10 400 400'
+Not in chained run context. Applying command.
+Applying command 'crop 300 300 100 100'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/crop6.png'
+Scrim::run finished. Returning image pointer.
+>>> [22] extra1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 14
+Not in chained run context. Applying command.
+Applying command 'Blank w:1366 h:600 fill:255:255:255'
+Not in chained run context. Applying command.
+Applying command 'add input/vu.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/vu2.png 255 255 255 600 0'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'replace ÿ ÿ ÿ      '
+Not in chained run context. Applying command.
+Applying command 'replace       ÿ ÿ ÿ'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra1.png'
+Scrim::run finished. Returning image pointer.
+>>> [23] extra2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 19
+Not in chained run context. Applying command.
+Applying command 'Blank w:1366 h:600 fill:255:255:255'
+Not in chained run context. Applying command.
+Applying command 'add input/vu.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/vu2.png 255 255 255 600 0'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'replace ÿ ÿ ÿ      '
+Not in chained run context. Applying command.
+Applying command 'replace       ÿ ÿ ÿ'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra2.png'
+Scrim::run finished. Returning image pointer.
+>>> [24] extra3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 16
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-angels-demons.png'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra3-tmp1.png'
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-angels-demons.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra3-tmp2.png'
+Not in chained run context. Applying command.
+Applying command 'Blank w:1544 h:1600 fill:0:0:0'
+Not in chained run context. Applying command.
+Applying command 'add output/extra3-tmp2.png 0 0 0 0 0'
+Not in chained run context. Applying command.
+Applying command 'add output/extra3-tmp1.png 0 0 0 772 0'
+Not in chained run context. Applying command.
+Applying command 'add output/extra3-tmp1.png 0 0 0 0 800'
+Not in chained run context. Applying command.
+Applying command 'add output/extra3-tmp2.png 0 0 0 772 800'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra3.png'
+Scrim::run finished. Returning image pointer.
+>>> [25] extra4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 8
+Not in chained run context. Applying command.
+Applying command 'Blank w:750 h:380 fill:0:0:0'
+Not in chained run context. Applying command.
+Applying command 'fill 0 0 250 380 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'fill 250 0 250 380 0 255 0'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 250 0'
+Not in chained run context. Applying command.
+Applying command 'fill 500 0 250 380 0 0 255'
+Not in chained run context. Applying command.
+Applying command 'add input/lion.png 255 255 255 500 0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/extra4.png'
+Scrim::run finished. Returning image pointer.
+>>> [26] fill1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/unionjack.png'
+Not in chained run context. Applying command.
+Applying command 'fill 150 75 75 75 0 0 0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/fill1.png'
+Scrim::run finished. Returning image pointer.
+>>> [27] fill2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/unionjack.png'
+Not in chained run context. Applying command.
+Applying command 'fill 0 0 100 50 255 0 0'
+Not in chained run context. Applying command.
+Applying command 'fill 150 75 50 25 0 255 0'
+Not in chained run context. Applying command.
+Applying command 'fill 275 125 25 25 0 0 255'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/fill2.png'
+Scrim::run finished. Returning image pointer.
+>>> [28] fill3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/unionjack.png'
+Not in chained run context. Applying command.
+Applying command 'fill 0 0 300 150 0 255 0'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/fill3.png'
+Scrim::run finished. Returning image pointer.
+>>> [29] fill4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 8
+Not in chained run context. Applying command.
+Applying command 'Blank w:300 h:300 fill:255:0:0'
+Not in chained run context. Applying command.
+Applying command 'fill 0 0 200 100 0 255 0'
+Not in chained run context. Applying command.
+Applying command 'fill 0 0 20 30 0 0 255'
+Not in chained run context. Applying command.
+Applying command 'fill 200 200 100 100 255 255 255'
+Not in chained run context. Applying command.
+Applying command 'fill 280 0 20 23 255 255 0'
+Not in chained run context. Applying command.
+Applying command 'fill 0 270 25 30 255 0 255'
+Not in chained run context. Applying command.
+Applying command 'fill 120 120 51 67 128 128 128'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/fill4.png'
+Scrim::run finished. Returning image pointer.
+>>> [30] h_mirror1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/symmetric.png'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/h_mirror1.png'
+Scrim::run finished. Returning image pointer.
+>>> [31] h_mirror2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/symmetric.png'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/h_mirror2.png'
+Scrim::run finished. Returning image pointer.
+>>> [32] h_mirror3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-hands.png'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/h_mirror3.png'
+Scrim::run finished. Returning image pointer.
+>>> [33] h_mirror4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-reptiles.png'
+Not in chained run context. Applying command.
+Applying command 'h_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/h_mirror4.png'
+Scrim::run finished. Returning image pointer.
+>>> [34] invert1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/xkcd.png'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/invert1.png'
+Scrim::run finished. Returning image pointer.
+>>> [35] invert2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/xkcd.png'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/invert2.png'
+Scrim::run finished. Returning image pointer.
+>>> [36] invert3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/dilbert.png'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/invert3.png'
+Scrim::run finished. Returning image pointer.
+>>> [37] invert4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-angels-demons.png'
+Not in chained run context. Applying command.
+Applying command 'invert'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/invert4.png'
+Scrim::run finished. Returning image pointer.
+>>> [38] replace1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman.png'
+Not in chained run context. Applying command.
+Applying command 'replace       ÿ ÿ ÿ'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/replace1.png'
+Scrim::run finished. Returning image pointer.
+>>> [39] replace2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/lion.png'
+Not in chained run context. Applying command.
+Applying command 'replace ÿ ÿ ÿ      '
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/replace2.png'
+Scrim::run finished. Returning image pointer.
+>>> [40] replace3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/dali.png'
+Not in chained run context. Applying command.
+Applying command 'replace ÿ ÿ ÿ õ õ õ'
+Not in chained run context. Applying command.
+Applying command 'replace ú ú ú È È È'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/replace3.png'
+Scrim::run finished. Returning image pointer.
+>>> [41] rotate_left1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/mondrian.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_left1.png'
+Scrim::run finished. Returning image pointer.
+>>> [42] rotate_left2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/lion.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_left2.png'
+Scrim::run finished. Returning image pointer.
+>>> [43] rotate_left3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman-game.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_left3.png'
+Scrim::run finished. Returning image pointer.
+>>> [44] rotate_left_rotate_right1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/lion.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_left_rotate_right1.png'
+Scrim::run finished. Returning image pointer.
+>>> [45] rotate_left_rotate_right2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 5
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-reptiles.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_left'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_left_rotate_right2.png'
+Scrim::run finished. Returning image pointer.
+>>> [46] rotate_right1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/mondrian.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_right1.png'
+Scrim::run finished. Returning image pointer.
+>>> [47] rotate_right2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-hands.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_right2.png'
+Scrim::run finished. Returning image pointer.
+>>> [48] rotate_right3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-angels-demons.png'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'rotate_right'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/rotate_right3.png'
+Scrim::run finished. Returning image pointer.
+>>> [49] to_gray_scale1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman.png'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/to_gray_scale1.png'
+Scrim::run finished. Returning image pointer.
+>>> [50] to_gray_scale2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/pacman.png'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/to_gray_scale2.png'
+Scrim::run finished. Returning image pointer.
+>>> [51] to_gray_scale3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/tetris.png'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/to_gray_scale3.png'
+Scrim::run finished. Returning image pointer.
+>>> [52] to_gray_scale4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/mandelbrot.png'
+Not in chained run context. Applying command.
+Applying command 'to_gray_scale'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/to_gray_scale4.png'
+Scrim::run finished. Returning image pointer.
+>>> [53] v_mirror1 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/symmetric.png'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/v_mirror1.png'
+Scrim::run finished. Returning image pointer.
+>>> [54] v_mirror2 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 4
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/symmetric.png'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/v_mirror2.png'
+Scrim::run finished. Returning image pointer.
+>>> [55] v_mirror3 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-hands.png'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/v_mirror3.png'
+Scrim::run finished. Returning image pointer.
+>>> [56] v_mirror4 <<<
+Scrim::run() called (top-level).
+Scrim::run started. is_chained: false. Number of commands: 3
+Not in chained run context. Applying command.
+Applying command 'Open filename:input/escher-angels-demons.png'
+Not in chained run context. Applying command.
+Applying command 'v_mirror'
+Not in chained run context. Applying command.
+Applying command 'Save filename:output/v_mirror4.png'
+Scrim::run finished. Returning image pointer.

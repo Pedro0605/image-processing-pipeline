@@ -12,14 +12,12 @@ namespace prog {
     namespace command {
         Open::Open(std::string filename) : Command("Open"), filename(filename) {}
 
-        Open::~Open() {};
+        Open::~Open() {}
 
         Image *Open::apply(Image *img) {
             // Dispose of previous image
             delete img;
 
-            // TODO:  fix rootpath
-            // img = loadFromPNG("../"+filename);
             img = loadFromPNG(filename);
 
             if (!img) {
