@@ -15,6 +15,7 @@ namespace prog {
         Open::~Open() {}
 
         Image *Open::apply(Image *img) {
+
             // Dispose of previous image
             delete img;
 

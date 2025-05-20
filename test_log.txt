@@ -365,7 +365,7 @@ Applying command 'rotate_right'
 Not in chained run context. Applying command.
 Applying command 'rotate_right'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
 Applying command 'rotate_right'
 Not in chained run context. Applying command.
@@ -715,7 +715,7 @@ Scrim::run started. is_chained: false. Number of commands: 3
 Not in chained run context. Applying command.
 Applying command 'Open filename:input/pacman.png'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
 Applying command 'Save filename:output/to_gray_scale1.png'
 Scrim::run finished. Returning image pointer.
@@ -725,9 +725,9 @@ Scrim::run started. is_chained: false. Number of commands: 4
 Not in chained run context. Applying command.
 Applying command 'Open filename:input/pacman.png'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
 Applying command 'Save filename:output/to_gray_scale2.png'
 Scrim::run finished. Returning image pointer.
@@ -737,7 +737,7 @@ Scrim::run started. is_chained: false. Number of commands: 3
 Not in chained run context. Applying command.
 Applying command 'Open filename:input/tetris.png'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
 Applying command 'Save filename:output/to_gray_scale3.png'
 Scrim::run finished. Returning image pointer.
@@ -747,7 +747,7 @@ Scrim::run started. is_chained: false. Number of commands: 3
 Not in chained run context. Applying command.
 Applying command 'Open filename:input/mandelbrot.png'
 Not in chained run context. Applying command.
-Applying command 'to_gray_scale'
+Applying command 'To_gray_scale'
 Not in chained run context. Applying command.
 Applying command 'Save filename:output/to_gray_scale4.png'
 Scrim::run finished. Returning image pointer.

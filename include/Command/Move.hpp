@@ -1,5 +1,5 @@
 //
-// Created by mestre on 5/3/25.
+// Created by Lucas on 15/5/2025.
 //
 
 #ifndef MOVE_HPP
@@ -24,8 +24,8 @@ namespace prog
             std::string toString() const override;
 
         private:
-            int delta_x;
-            int delta_y;
+            int dx;
+            int dy;
         };
     }
 }

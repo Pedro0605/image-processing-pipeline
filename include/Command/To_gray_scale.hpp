@@ -1,5 +1,5 @@
 //
-// Created by mestre on 4/30/25.
+// Created by Lucas on 15/5/2025.
 //
 
 #ifndef TO_GRAY_SCALE_HPP

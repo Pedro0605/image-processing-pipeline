@@ -1,5 +1,5 @@
 //
-// Created by mestre on 5/6/25.
+// Created by Lucas on 15/5/2025.
 //
 
 #ifndef SCALEUP_HPP
