@@ -12,7 +12,7 @@ namespace prog {
 
         Blank::Blank(int w, int h, Color &fill) : Command("Blank"), w(w), h(h), fill(fill) {}
 
-        Blank::~Blank() {};
+        Blank::~Blank() {}
 
         Image *Blank::apply(Image *img) {
 
