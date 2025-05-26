@@ -18,7 +18,7 @@ namespace prog {
 
         ~Scrim();
 
-        Image *run(Image *img, bool is_chained = false);
+        Image *run(Image *img);
 
         Image *run();
     };

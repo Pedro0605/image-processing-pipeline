@@ -21,9 +21,11 @@ namespace prog {
 
         static std::vector<std::string> call_stack;
 
-        static Scrim *parseScrim(std::istream &input);
+        static Scrim *parseScrim(std::istream &input, bool chained = false);
 
         static Scrim *parseScrim(const std::string &filename);
+
+        static Scrim *parseScrim(const std::string &filename, bool chained);
 
         static Command *parse_command(std::string command_name, std::istream &input);
     };

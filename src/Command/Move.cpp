@@ -44,7 +44,7 @@ namespace prog {
             return new_img;
         }
 
-        // Converts this move command into a string that can be logged or stored.
+        // Returns the string representation of this command.
         std::string Move::toString() const {
             std::ostringstream ss;
             ss << name() << " " << dx << " " << dy;

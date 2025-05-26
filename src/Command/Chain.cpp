@@ -5,7 +5,6 @@
 #include "Command/Chain.hpp"
 #include "ScrimParser.hpp"
 #include "Scrim.hpp"
-#include "Logger.hpp"
 
 #include <fstream>
 #include <sstream>
@@ -14,47 +13,50 @@
 namespace prog {
     namespace command {
 
+        // Initializes the Chain command with a list of filenames to chain.
         Chain::Chain(const std::vector<std::string>& filenames): Command("chain"), filenames(filenames) {}
 
-        Chain::~Chain() = default;
+
+        //Destructor.
+        Chain::~Chain() {}
 
         Image* Chain::apply(Image* img) {
             for (const auto& filename : filenames) {
+
+                // Prevent recursive inclusion using call stack
                 if (std::find(ScrimParser::call_stack.begin(), ScrimParser::call_stack.end(), filename) != ScrimParser::call_stack.end()) {
-                    *Logger::out() << "Recursive chain detected for '" << filename << "'. Ignoring.\n";
                     continue;
                 }
 
+                // Push current file onto the call stack
                 ScrimParser::call_stack.push_back(filename);
-                *Logger::out() << "Entering chained file: '" << filename << "'\n";
 
                 std::ifstream chained_file_stream(filename);
 
+                // Check if file opened successfully
                 if (!chained_file_stream.is_open()) {
-                    *Logger::err() << "Error opening chained file: '" << filename << "'\n";
                     ScrimParser::call_stack.pop_back();
                     continue;
                 }
 
-                Scrim* chained_scrim = ScrimParser::parseScrim(chained_file_stream);
+                // Parse the scrim file into a Scrim object
+                Scrim* chained_scrim = ScrimParser::parseScrim(filename, true);
 
+                // Execute the filtered scrim
+                img = chained_scrim->run(img);
 
-                if (chained_scrim != nullptr) {
-                    img = chained_scrim->run(img, true); // Pass true to indicate it's a chained run
+                //Clean up.
+                delete chained_scrim;
 
-                    delete chained_scrim;
-                } else {
-                     *Logger::err() << "Error parsing chained file: '" << filename << "'. Skipping its commands.\n";
-                }
-
+                // Pop the file from the call stack after processing
                 ScrimParser::call_stack.pop_back();
-                *Logger::out() << "Exiting chained file: '" << filename << "'\n";
-
             }
-
+            // Return the final image after all chained scripts
             return img;
         }
 
+
+        // Converts the chain command and its file list to a string
         std::string Chain::toString() const {
             std::ostringstream ss;
             ss << name();

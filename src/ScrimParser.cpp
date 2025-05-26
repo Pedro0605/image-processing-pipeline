@@ -49,7 +49,7 @@ namespace prog {
 
     // Parses a Scrim pipeline from an input stream.
     // Reads command names and parses individual commands until the stream ends.
-    Scrim *ScrimParser::parseScrim(std::istream &input) {
+    Scrim *ScrimParser::parseScrim(std::istream &input, bool chained) {
         vector<Command *> commands;
 
         // Parse commands while there is input in the stream
@@ -67,11 +67,30 @@ namespace prog {
                 return nullptr; // Indicate parsing failure
             }
 
+            //Ignores 'blank' 'open' and 'save' commands if scrim is chained
+            if (chained &&
+                        (dynamic_cast<command::Blank*>(command) ||
+                         dynamic_cast<command::Open*>(command) ||
+                         dynamic_cast<command::Save*>(command))) {
+                delete command;
+                continue;
+            }
+
             commands.push_back(command);
         }
 
         return new Scrim(commands);
     }
+
+    // Overloaded version of parseScrim that takes a filename and a flag to skip commands in chained contexts
+    Scrim *ScrimParser::parseScrim(const std::string &filename, bool chained) {
+        //Open the file.
+        ifstream in(filename);
+
+        // Delegate to the stream-based parser with the chained flag
+        return parseScrim(in, chained);
+    }
+
 
 
     // Parses a Scrim pipeline from a file.
